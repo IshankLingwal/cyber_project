@@ -10,7 +10,7 @@ from lime.lime_text import LimeTextExplainer
 # ----------------------------
 # Load and preprocess data
 # ----------------------------
-data = pd.read_csv("C:\\Users\\ishan\\OneDrive\\Desktop\\ccc\\spam.csv")
+data = pd.read_csv("spam.csv")
 data.drop_duplicates(inplace=True)
 data['Category'] = data['Category'].replace(['ham', 'spam'], ['not spam', 'spam'])
 
